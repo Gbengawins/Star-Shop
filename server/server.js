@@ -23,7 +23,7 @@ app.use("/api/stripe", stripe);
 app.use("/api/products", productsRoute);
 
 app.get("/", (req, res) => {
-  res.send("Welcome our to online shop API...");
+  res.send("Welcome Star online shop API...");
 });
 
 app.get("/products", (req, res) => {
@@ -31,7 +31,7 @@ app.get("/products", (req, res) => {
 });
 
 const uri = process.env.DB_URI;
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 6500;
 
 app.listen(PORT, () => {
   console.log(`Server running on port: ${PORT}...`);
