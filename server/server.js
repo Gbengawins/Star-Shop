@@ -34,7 +34,7 @@ const uri = process.env.DB_URI;
 const PORT = process.env.PORT || 6500;
 
 app.listen(PORT, () => {
-  console.log(`Server running on port: ${PORT}...`);
+  console.log(`Server running on port: ${PORT}`);
 });
 
 mongoose
@@ -42,5 +42,5 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => console.log("MongoDB connection established..."))
+  .then(() => console.log("MongoDB connection established!"))
   .catch((error) => console.error("MongoDB connection failed:", error.message));
